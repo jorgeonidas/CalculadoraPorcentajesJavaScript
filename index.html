@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Select a Calculation</h1>
+    <select id="selectProblem" onchange="selection()">
+      <option value="1">What is Y% of X?</option>
+      <option value="2">X is Y% of what?</option>
+      <option value="3">What is Y% of X?</option>
+      <option value="4">X% of what is Y?</option>
+      <option value="5">Y% of X is what?</option>
+    </select>
+    <h2 id="titleOfProblem">What is Y% of X?</h3>
+    <form id="problemToResolve" action="index.html" method="post">
+        <label>X: </label>
+        <input type="text" id="number1" value="">
+        <label>Y:</label>
+        <input type="text" id="number2" value="">
+      <br>
+      <br>
+      <!--<input type="submit" name="" value="Calculate">-->
+    </form>
+    <button onclick="Calculate()" type="button" name="button">Calcular</button>
+    <h3 id="resultText">Respuesta:</h3>
+
+    <script type="text/javascript" src="tarea.js"></script>
+  </body>
+</html>
